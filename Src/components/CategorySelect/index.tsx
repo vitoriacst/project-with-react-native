@@ -1,10 +1,21 @@
 import React from "react"
-import { View } from "react-native"
-import { styles } from "../ButtonIcon/styles"
+import { ScrollView } from 'react-native';
+import { styles } from "./styles"
+import { categories } from "../../utils/categories";
+
 export function CategorySelect(){
       return(
-        <View style={styles.container}>
-            
-        </View>
+       <ScrollView
+          horizontal
+          style={styles.container}
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{paddingRight:40}}
+       >
+         {
+           categories.map(category=>(
+             <Category/>
+           ))
+         }
+       </ScrollView>
       )
   }
