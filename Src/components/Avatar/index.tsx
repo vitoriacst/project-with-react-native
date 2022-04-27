@@ -20,6 +20,5 @@ export function Avatar({urlImage}:Props){
             style={styles.Avatar}
         />
       </LinearGradient>
-    )
-    
+    )   
 }
