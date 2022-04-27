@@ -21,4 +21,5 @@ export function Avatar({urlImage}:Props){
         />
       </LinearGradient>
     )
+    
 }
