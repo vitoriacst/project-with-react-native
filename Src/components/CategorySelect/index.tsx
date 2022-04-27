@@ -5,6 +5,7 @@ import { categories } from "../../utils/categories";
 
 export function CategorySelect(){
       return(
+        
        <ScrollView
           horizontal
           style={styles.container}
